@@ -5,11 +5,15 @@ def ask_age
 end
 
 
-def ticket_price(age)
-  #if ask_age = < 18
-   # puts "10kr"
-  #elsif ask_age = >65
-   # puts "15kr"
-  #7end
+def ticket_price(ask_age)
+  if ask_age < 18
+   ticket_price = 10
+  elsif ask_age < 65
+   ticket_price = 20
+  else
+    puts 15
+  end
+  return ticket_price
 end
-puts ask_age()
+puts ask_age
+ticket_price(ask_age)
